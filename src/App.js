@@ -1,14 +1,27 @@
 import React, { Component } from 'react';
 import './App.css';
+import QuizPanel from './QuizPanel';
+import NavPanel from './NavPanel';
+
+const myRow = {
+  height: "100px"
+};
 
 class App extends Component {
   render() {
     return (
-      <div className="container bg-primary">
-        <p className="text-primary">.text-primary</p>
-        <p className="text-secondary">.text-secondary</p>
-        <p className="text-success">.text-success</p>
-        <p className="text-danger">.text-danger</p>
+      <div className="row" style={myRow}>
+          <div className="col-3">
+            <NavPanel/>
+          </div>
+
+          <div className="col-6 container bg-primary">
+            <div className="row justify-content-center"><h1>PokeQuiz</h1></div>
+            <hr/>
+            <QuizPanel/>
+          </div>
+          
+          <div className="col-3"></div>
       </div>
     );
   }
