@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import './App.css';
-import QuizPanel from './QuizPanel';
-import NavPanel from './NavPanel';
-import TitlePanel from './TitlePanel';
+import QuizPanel from './components/quiz/QuizPanel';
+import NavPanel from './components/shared/NavPanel';
+import TitlePanel from './components/shared/TitlePanel';
 
 class App extends Component {
   render() {
