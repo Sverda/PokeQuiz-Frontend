@@ -3,19 +3,19 @@ import React, { Component } from 'react';
 const stylee = {
   navPanel: {
     borderRadius: "15%",
-    width: "300px",
-    height: "300px"
+    width: "250px",
+    height: "250px"
   },
 
   cell: {
-    width: 100,
-    height: 100
+    borderRadius: "15%",
+    width: 80,
+    height: 80
   },
 
   button: {
-    width: 100,
-    height: 100,
-    backgroundColor: "transparent"
+    width: 80,
+    height: 80
   }
 };
 

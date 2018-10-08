@@ -3,25 +3,19 @@ import './App.css';
 import QuizPanel from './QuizPanel';
 import NavPanel from './NavPanel';
 
-const myRow = {
-  height: "100px"
-};
-
 class App extends Component {
   render() {
     return (
-      <div className="row" style={myRow}>
-          <div className="col-3">
+      <div className="row">
+          <div className="container col-2">
             <NavPanel/>
           </div>
 
-          <div className="col-6 container bg-primary">
+          <div className="col-10 container bg-primary">
             <div className="row justify-content-center"><h1>PokeQuiz</h1></div>
             <hr/>
             <QuizPanel/>
           </div>
-          
-          <div className="col-3"></div>
       </div>
     );
   }
