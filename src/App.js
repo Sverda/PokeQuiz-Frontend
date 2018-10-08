@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import QuizPanel from './QuizPanel';
 import NavPanel from './NavPanel';
+import TitlePanel from './TitlePanel';
 
 class App extends Component {
   render() {
@@ -12,8 +13,7 @@ class App extends Component {
           </div>
 
           <div className="col-10 container bg-primary">
-            <div className="row justify-content-center"><h1>PokeQuiz</h1></div>
-            <hr/>
+            <TitlePanel/>
             <QuizPanel/>
           </div>
       </div>
