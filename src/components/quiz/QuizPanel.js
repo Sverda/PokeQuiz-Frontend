@@ -17,11 +17,8 @@ class QuizPanel extends Component {
     }).then(data => {
       let sprite = data.correctAnswer.image;
       let names = data.fakeAnswers;
-      this.state.setState({
-        sprite: sprite,
-        names: names
-      });
-      console.log("state:", this.state.names, this .state.sprite);
+      this.setState({ sprite: sprite, names: names });
+      console.log("state:", this.state.names, this.state.sprite);
     })
   }
 
