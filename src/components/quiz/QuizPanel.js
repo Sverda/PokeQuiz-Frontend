@@ -1,11 +1,21 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+
+const stylee = {
+  spriteDiv: {
+    width: "70%",
+    height: "70%"
+  },
+  img: {
+    width: "70%",
+    height: "70%"
+  }
+};
 
 class QuizPanel extends Component {
   constructor(){
     super();
     this.state = {
-      sprite: logo,
+      sprite: "",
       names: ["name_0", "name_1", "name_2", "name_3"]
     };
   }
@@ -25,8 +35,9 @@ class QuizPanel extends Component {
   render() {
     return (
       <div className="container">
-        QuizPanel
-        <img src={logo} className="App-logo" alt="logo" />
+        <div className="container" style={stylee.spriteDiv}>
+          <img src={"data:image/png;base64," + this.state.sprite} alt="sprite" className="img-fluid" style={stylee.img}/>
+        </div>
         <div className="container row">
           <button className="btn col-3">{this.state.names[0]}</button>
           <button className="btn col-3">{this.state.names[1]}</button>
